@@ -1,0 +1,20 @@
+.box{
+    height: 100px;
+    background-color: red;
+    width: 100px;
+    text-align: center;
+    /*transicion de propiedad*/
+    transition-property: left, background-color;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-out;
+    position: relative;
+    left: 0;
+}
+
+.box:hover{
+    background-color: blue;
+    color: white;
+}
+body:hover .box{
+    left:500px;
+}

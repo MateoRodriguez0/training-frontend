@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+body, div{
+    box-sizing: border-box;
+    
+}
+.grid{
+
+    display: grid;
+    height: 70vh;
+    grid-template-columns: repeat(3,150px);
+    /*Repetir los tamaños de las columnas varas veces*/
+    grid-template-rows: repeat(3,150px);
+     
+    /*definir altura a todas las filas que se creen automaticamente*/
+    
+}
+.grid__item{
+    background-color:rgb(62, 201, 124);
+    margin: 10px;
+    padding: 10px;
+    font-size: 30;
+    color: white;
+
+}

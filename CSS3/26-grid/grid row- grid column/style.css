@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.grid{
+    display: grid;
+    /*auto-fit hace que las grid-celds se ajusten al ancho del contenedor grid*/
+
+    /*Auto-fill hace que cuando haya un espacio igual a 1fr teniendo en cuenta el tamaño de la columna
+    automaticamente rellenara con una celda de las que se encontraban en la siguiente*/
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+    
+
+  
+    grid-template-rows: repeat(3,200px);
+    grid-auto-columns: 1fr;
+    /*definir altura a todas las filas que se creen automaticamente*/
+   
+
+    /**define en que sentido se agregaran automaticamente as nuevas
+    celdas*/
+    grid-auto-flow: row ;
+    gap: 10px;
+}
+.grid__item{
+    background-color:rgb(62, 201, 124);
+    padding: 10px;
+    font-size: 30;
+    color: white;
+
+}
+@media screen and (max-width: 300px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid__item:first-child{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 3;
+
+    /*definir el start y el end de forma reducida*/
+    /*
+    grid-column: 1/ span 3;
+    grid-row: 1/ span 3;
+    */
+}

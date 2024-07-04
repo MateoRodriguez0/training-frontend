@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.container{
+  /*
+  Tiene en cuenta las dimensiones en bloque y en linea
+   container-type: size;
+   
+   Tiene en cuenta solo las dimensiones en linea
+   container-type: inline-size;
+   
+   Hace que no sea un querie congtainer
+   container-type: normal;
+   */
+  container-type:inline-size;
+
+  container-name: main;
+}
+
+
+@container main (max-width: 800px){
+ body{
+  color: red;
+  font-size: 200px;
+ }
+  p{
+    font-weight: bold;
+  }
+ 
+}

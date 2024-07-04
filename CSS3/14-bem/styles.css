@@ -1,0 +1,19 @@
+ul{
+    border: 2px solid black;
+}
+.Lista__item{
+    margin: 10px;
+    padding: 10px;
+}
+.item--importante{
+    color: blue;
+}
+
+.item--danino{
+    color: red;
+}
+
+.Lista--vieja{
+    opacity: 0.5;
+    background-color: aqua;
+}

@@ -1,0 +1,64 @@
+/*
+Definiciones
+flex grow :
+establece cuantas partes del espacio disponible en el eje principal
+va a tomar cada item
+
+flex shrink:
+indica cuantas veces se puede reducir un item
+*/
+
+
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox{
+    display: flex;    
+    flex-flow: row wrap;
+    height:520px;
+    margin-top: 20px;
+    border: 2px solid black;
+    align-items: center;
+    /*Es la separacion que van a tener los hijos del contenedor
+    gap: 10px;
+    */
+   
+
+
+   
+}
+
+.flexbox-item{
+    height: 100px;
+    background-color:rgb(122, 11, 11);
+    font-size: 40px;
+    color: white;
+    flex: 1 1 100px;
+}
+/*
+
+.flexbox-item:nth-child(1){
+    background-color: rgb(223, 124, 124);
+    flex-grow: 3;
+    max-width: 500px;
+
+}
+
+.flexbox-item:nth-child(2){
+    flex-grow:1;
+}
+
+.flexbox-item:nth-child(3){
+   flex-grow: 1;
+
+
+}
+*/
+.flexbox-item:nth-child(1){
+    background-color: rgb(223, 124, 124);
+    align-self: self-end;
+
+ }

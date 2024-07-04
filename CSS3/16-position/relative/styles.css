@@ -1,0 +1,20 @@
+.box{
+   height: 100px;
+   width: 100px;
+   background-color: rgb(253, 189, 11);
+   position: relative;
+ 
+}
+.box--blue{
+   background-color: blue;
+   top: 50px;
+   left: 10px;
+   z-index: 2;
+}
+
+.box:first-child{
+   background-color: red;
+   top: 100px;
+   left: 40px;
+   z-index: 3;
+}

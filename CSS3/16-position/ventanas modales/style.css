@@ -1,0 +1,33 @@
+.modal{
+    position: absolute;
+    background-color: rgba(15, 15, 15, 0.397);
+    width: 100vw;
+    height: 100vh;
+}
+.modal__content{
+    background-color: white;
+    border: 2px solid rgb(116, 112, 112);
+    border-radius: 20px;
+    box-shadow: 0 0 0px 0 white;
+    text-align: center;
+    width: 500px;
+    margin: auto;     
+    top: 50px;
+    position: relative;
+   
+}
+
+.modal__body{
+    text-align: justify;
+    padding: 30px;
+}
+
+body{
+    margin: 0;
+}
+
+.modal__close-button{
+    position: absolute;
+    right: 12px;
+    top: 8px;
+}

@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: #223;
+    color: #fff;
+    display: flex;
+
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+   
+
+}
+
+.texto{
+    font-family:Verdana;
+    letter-spacing: 5px;
+    letter-spacing: 3px;
+    animation: crecer 5s both steps(100);
+    overflow: hidden;
+    
+
+}
+/*
+.texto::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+  
+}
+*/
+
+span{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-width: 4px solid;
+    width: 12ch;
+    animation: typing 1s steps(120000),
+    blink 5s infinite step-end alternate;
+    overflow: hidden;
+
+}
+@keyframes crecer {
+    from{
+     width: 0%;
+    }
+    to{
+     width: 100%;
+    }
+ }
+
+ @keyframes typing {
+    from{
+     width: 0;
+    }
+    
+ }
+
+ @keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+ }

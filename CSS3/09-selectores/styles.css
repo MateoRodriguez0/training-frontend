@@ -1,0 +1,46 @@
+
+/**selecciones por atributo*/
+
+/*selector cuando una imagen tienen un src = al parametro*/
+img[title$="t09"]{
+    width: 200px;
+}
+
+/*cuando el title termina en con la siguiente secuencia de caracteres*/
+img[title$="t09"]{
+    width: 200px;
+}
+
+/*cuando el title termina en con la siguiente secuencia de caracteres*/
+img[title^="mt"]{
+    width: 200px;
+}
+
+/* SELECCIONES DESCENDIENTES*/
+
+/*colorea cada li que esta adentro de un ul*/
+ul li{
+    color: rebeccapurple;
+
+}
+
+/*buscar un elemento que es hijo directo de un ul*/
+ul >strong{
+    color: red;
+}
+
+/*selector de hermano adyacente( buscar elemento que esta declarado despues 
+de un elemento)*/
+h1+p+p{
+    color: red;
+}
+
+/*selector de hermanos generales( selecciona a todos los elementos <p>
+que esten en el msismo contenedor del primer elemento <h1>)*/
+h1~p{
+    color: red;
+}
+
+h1,p{
+ color: blue;
+}

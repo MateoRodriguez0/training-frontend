@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*Propiedades de alineacion a la caja contenedora*/
+.flexbox{
+    display: flex;    
+    flex-direction: row;
+    flex-flow: row;
+    height: 200px;
+    width: 450px;
+    margin-top: 5%;
+    margin-left: 25%;
+    /*
+    elementos centrados
+    justify-content: center;
+
+    elementos en direccion del eje
+    justify-content: start;
+
+    elementos en orden inverso a la direccion del eje 
+    justify-content: end;
+    
+    organiza el primer y ultimo elemento en los extremos 
+    y el resto los acomoda en el centro con una distancia distribuida
+    justify-content: space-between;
+    
+    deja todos los elementos con a misma distancia de separacion
+    justify-content: space-evenly;
+    
+    organiza los elementos en el centro con una distancia distribuida
+    pero los elementos de los exremos no comparten el mismo margen con el
+    bordel elemento padre y con el elemento de a su lado interior
+    justify-content: space-around;
+    */
+
+    justify-content: space-between;
+    align-items: start;
+    border: 2px solid black;
+
+    align-content: start;
+
+    /*Alineaciom de los items en el eje cruzado
+
+     align-items: stretch;
+     El contenido se le amuenta hasta completar todo el ejee cruzado
+
+     align-items: start;
+     los items se alinean en la misma altura sin tener en cuenta el texto
+
+     align-items: end;
+     los items se alinean teniendo en cuenta el texto de manera que el texto
+     quedé a la altura
+
+    align-items: baseline;
+    los items se alinean de manera centrada
+    con respecto a la altura del texto
+
+    */
+   
+}
+
+.flexbox-item{
+    width: 100px;
+   
+    background-color:rgb(122, 11, 11);
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.flexbox-item:nth-child(1){
+    background-color: rgb(223, 124, 124);
+    order: 3;
+}
+
+
+.flexbox-item:nth-child(2){
+    order: 2;
+}
+
+
+
+.flexbox-item:nth-child(3){
+    order: 1;
+}
+
+
+.flexbox-item:nth-child(4){
+    order: 0;
+}
+

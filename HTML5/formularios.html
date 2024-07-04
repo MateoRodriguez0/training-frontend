@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>formularios</h1>
+    <form enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>informacion personal</legend>
+            <div>
+                <label for="firts_name"> Nombre:</label>
+                <input type="text" name="firts_name" placeholder="nombre" id="firts_name">    
+           
+            </div>
+            <div>
+                <label for="last_name"> Apellido:</label>
+                <input type="text" name="last_name" placeholder="apellido" id="last_name">
+            </div>
+            <div>
+                <label for="email"> Email:</label>
+                <input type="email" name="email" placeholder="email" id="email">
+            </div>
+            <div>
+                <label for=""> genero:</label>
+                <input type="radio" id="gen_mujer" name="genero" value="mujer">
+                <label for="gen_mujer"> mujer</label>
+                <input type="radio" id="gen_hombre" name="genero" value="Hombre" >
+                <label for="gen_hombre">Hombre</label>
+            </div>
+
+            <div>
+                <label for="vehiculo_select"> vehiculo</label>
+                <select name="vehiculo" id="vehiculo_select">
+                    <option value="carro">carro</option>
+                    <option value="carro">carro</option>
+                    <option value="carro">carro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="_check"> check</label>
+                <input type="file" name="nams" id="_check" value="ssd">
+            </div>
+            <div>
+                <label for="Buscar"> Buscar</label>
+                <input type="search" name="reset" id="Buscar" placeholder="Buscar">
+                <button type="submit">Buscar</button>
+            </div>
+
+            <div>
+                <label for="_file"> file</label>
+                <input type="checkbox" name="nams" id="_file" value="ssd">
+            </div>
+
+            <div>
+                <label for="time"> time</label>
+                <input type="time" name="time" id="time">
+            </div>
+
+            <div>
+                <label for="_file"> Sitio web</label>
+                <input type="url" name="nams" id="ur">
+            </div>
+
+            <div>
+                <label for="_file"> progreso</label>
+                <progress max="100" value="45"></progress>
+           </div>
+
+           <div>
+            Lista de datos
+            <input list="frutas" name="frutas">
+            <datalist id="frutas">
+                <option value="naranja"></option>
+                <option value="manzana"></option>
+                <option value="pera"></option>
+                <option value="sandia"></option>
+                <option value="melon"></option>
+            </datalist>
+
+           </div>
+
+            <div>
+                <label for="_file"> reset</label>
+                <input type="reset" name="reset" id="_file" placeholder="limpiar">
+            </div>
+
+        </fieldset>
+        
+        
+       
+        <label for="escrip"> Descripción:</label>
+        <textarea name="descripcion" id="escrip "></textarea>
+        <button type="submit">Enviar</button>
+
+    </form>
+</body>
+</html>

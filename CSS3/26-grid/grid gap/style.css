@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+    /*Repetir los tamaños de las columnas varas veces*/
+    grid-template-rows: repeat(3,100px);
+    
+    /*definir altura a todas las filas que se creen automaticamente*/
+    grid-auto-rows: 200px;
+    grid-auto-flow:row ;
+    column-gap: 10px;
+    row-gap: 10px;
+    gap: 10px;
+}
+.grid__item{
+    background-color:rgb(62, 201, 124);
+    padding: 10px;
+    font-size: 30;
+    color: white;
+
+}
+@media screen and (max-width: 600px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

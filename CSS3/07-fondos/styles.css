@@ -1,0 +1,20 @@
+body{
+    background-color:darkslategray;
+    margin: 0;
+    background-size: cover;
+    background-repeat: repeat-x;
+    
+}
+
+
+div{
+   background-color: pink;
+   background-attachment: fixed;
+   background-size: 1000px;
+   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_QRt0h7IrYhi3pfRt7H_xLClsj1hcEpd7QQ&s');
+
+   width: 25%;
+   height:200px;
+   margin: 20px;
+
+}

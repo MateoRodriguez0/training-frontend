@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    height: 200vh;
+    /*nombre de mi scroll*/
+   
+    /*ejee del scroll
+    
+     scroll-timeline-axis: inline;
+
+     scroll vertical
+    scroll-timeline-axis: block;
+
+    **/
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    border: 5px solid rgb(25, 170, 238);
+    padding: 4px;
+    border-radius: 18px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-timeline-name: --body;
+
+
+}
+
+.container{
+    padding: 20px;
+    background-color:red;
+    border-radius: 8px;
+    width: 10%;
+    animation-name: llenar-barra;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-timeline: scroll();
+}
+
+.container:hover{
+    animation-name: llenar-barra;
+    animation-timing-function: linear;
+    animation-duration: 2s ;
+    animation-fill-mode: both;
+}
+
+@keyframes llenar-barra {
+    from{
+        width: 10%;
+    }
+    to{
+        width: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+.container{
+   border: 2px solid black;
+   position: relative;
+}
+
+.box{
+   height: 100px;
+   width: 100px;
+   background-color: rgb(253, 189, 11);
+   color: white;
+}
+.box--blue{
+   background-color: blue;
+   position: absolute;
+   top: 0;
+   right: 0;
+
+}
+
+.box--red{
+   
+   background-color: red;
+}

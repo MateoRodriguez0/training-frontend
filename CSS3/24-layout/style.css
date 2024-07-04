@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    background-color: #1F2023;
+    font-family: sans-serif;
+    color: white;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.header__name{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header__logo{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2%;
+}
+
+header{
+    margin: 0;
+    background-color: #1F2023;
+}
+.description {
+    display: flex; /* Enable Flexbox for the container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 20px;
+    
+}
+
+  p{
+    margin: auto;
+    text-align: center;
+    text-wrap: pretty;
+    
+  }
+  
+
+
+  /* navbar section**/
+
+  .nav{
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+
+    
+  }
+  .nav__ul{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav__link{
+    color: #1F2023;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+  }
+.nav__item{
+    list-style: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+    border-radius: 20px;
+    border: hidden;
+
+}
+
+.link-login{
+    color: #fff !important;
+}
+.item__login{
+    background-color: #1F2023;
+}
+.nav__item:hover{
+    background-color: #1f202333;
+}
+
+.item__login:hover{
+    background-color: #1F2023;
+}
+
+
+
+main{
+    max-width: 800px;
+    margin: auto;
+    
+}
+
+.content{
+    text-align: start;
+    text-wrap: pretty;
+}

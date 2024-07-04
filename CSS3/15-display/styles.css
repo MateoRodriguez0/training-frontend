@@ -1,0 +1,21 @@
+div{
+    background-color: gray;
+
+    margin-bottom: 30px;
+}
+body{
+    margin: 0;
+}
+
+a{
+    color: rgb(247, 203, 58);
+    margin: 20px;
+    padding: 20px;
+    border: px solid black;
+    background-color: red;
+    
+}
+
+p{
+    display: inline;
+}

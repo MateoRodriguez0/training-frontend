@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    height: 200vh;
+    /*nombre de mi scroll*/
+   
+    /*ejee del scroll
+    
+     scroll-timeline-axis: inline;
+
+     scroll vertical
+    scroll-timeline-axis: block;
+
+    **/
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    border: 5px solid rgb(25, 170, 238);
+    padding: 4px;
+    border-radius: 18px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+
+
+}
+
+
+.box{
+    view-timeline: --cajita block;
+    padding: 20px;
+    background-color:rgb(25, 170, 238);
+    border-radius: 8px;
+    animation-name:llenar-barra;
+    animation-timeline: --cajita;
+    animation-range: cover 10%;
+    animation-range-end: cover 50%;
+    animation-fill-mode: both;
+}
+
+
+@keyframes llenar-barra {
+    from{
+        width: 10%;
+    }
+    to{
+        width: 100%;
+    }
+}
+.crecedor{
+    height: 100vh;
+}

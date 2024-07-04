@@ -1,0 +1,41 @@
+div{
+    padding: 20px;
+}
+
+/**primera letra*/
+h1::first-letter{
+
+    font-size: 50px;
+}
+
+/**primera linea*/
+p::first-line{
+    font-weight: bold;
+}
+
+/**cuando se seleccione cualquier elemento*/
+*::selection{
+    background-color: aqua;
+}
+
+input{
+    color: red;
+}
+
+
+input::content{
+    color: blue;
+}
+
+/*modifica el color de la forma con la que se marca cada li*/
+li::marker{
+    color: green;
+
+}
+
+li::before{
+    content: 'hola ';
+}
+li::after{
+    content: ' adios ';
+}

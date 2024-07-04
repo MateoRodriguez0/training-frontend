@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flexbox{
+    display: flex;
+    flex-flow: row wrap;
+   
+    border: 2px solid black;
+}
+
+.flexbox-item{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(122, 11, 11);
+    margin: 10px;
+    font-size: 40px;
+    color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.flexbox-item:nth-child(1){
+    background-color: rgb(223, 124, 124);
+}
+

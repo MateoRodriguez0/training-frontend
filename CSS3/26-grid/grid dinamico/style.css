@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.grid{
+    display: grid;
+    /*auto-fit hace que las grid-celds se ajusten al ancho del contenedor grid*/
+
+    /*Auto-fill hace que cuando haya un espacio igual a 1fr teniendo en cuenta el tamaño de la columna
+    automaticamente rellenara con una celda de las que se encontraban en la siguiente*/
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+    
+
+  
+    grid-template-rows: repeat(3,200px);
+    grid-auto-columns: 1fr;
+    /*definir altura a todas las filas que se creen automaticamente*/
+    grid-auto-rows: 200px;
+
+    /**define en que sentido se agregaran automaticamente as nuevas
+    celdas*/
+    grid-auto-flow: row ;
+    gap: 10px;
+}
+.grid__item{
+    background-color:rgb(62, 201, 124);
+    padding: 10px;
+    font-size: 30;
+    color: white;
+
+}
+@media screen and (max-width: 300px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

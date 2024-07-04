@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+}
+
+div{
+ 
+    /*background-color: rgb(190, 120, 200);*/
+   /* background-color: #aba ;*/
+   background-color: hsl(240, 64%, 63%);
+
+    margin: 10px;
+    padding: 50px;
+    text-align: center;
+    color: #12f;
+}

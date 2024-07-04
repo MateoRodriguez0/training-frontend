@@ -1,0 +1,64 @@
+body{
+    margin: 0 ;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+body, div{
+    box-sizing: border-box;
+    padding: 0;
+}
+.grid{
+    flex-grow: 1;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: minmax(200px, 1fr) minmax(400px, 3fr) minmax(200px, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-auto-flow: dense ;
+    min-height: 100vh;
+    grid-template-areas: 
+    "nav main aside"
+    "footer footer footer";
+    gap: 10px;
+    margin: auto;
+    max-width: 1200px;
+}
+nav, header, footer, aside, main{
+    padding: 20px;
+    border: 1px solid rebeccapurple;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(80, 109, 143);
+    width: 100%;
+}
+
+nav{
+    grid-area: nav;
+    max-width: 300px;
+}
+
+main{
+    grid-area: main;
+    min-width: 300px;
+}
+
+aside{
+    grid-area: aside;
+    
+}
+
+footer{
+    grid-area: footer;
+    width: 100%;
+}
+
+
+nav, aside{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+}

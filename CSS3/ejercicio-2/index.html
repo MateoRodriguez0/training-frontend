@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body {
+  scroll-behavior: smooth; /* Activar el desplazamiento suave */
+}
+
+</style>
+
+
+<body>
+    <header class="header">
+        <input type="checkbox" class="header__checkbox" id="open-menu">
+        <label for="open-menu" class="header__open-nav-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="OpenAI Logo-01.svg" alt="">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav__list">
+                <li><a href="#">About</a></li>
+                <li ><button id="link_portfolio">portfolio</button></li>
+                <li ><button id="link_contact">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="profile">
+        <div class="profile__wrapper">
+           <!-- <div class="profile__img-container">
+                <img src="https://media.es.wired.com/photos/655b7ea3099cf21b829f33ad/16:9/w_2560%2Cc_limit/GettyImages-1778708098.jpg"
+                    alt="openia">
+            </div>-->
+            <div class="profile__data-continer">
+                <h1>¿Que es openIA?</h1>
+                <div class="profile__description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque inventore porro, est architecto
+                        alias atque hic vitae quia, dignissimos quidem nam in veritatis accusamus voluptate. Id quae
+                        odio nobis incidunt.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quia veritatis, magni
+                        repellendus commodi, sunt molestiae unde vero aperiam dolores labore quaerat odit nulla ad
+                        molestias minus? Amet, ex soluta!s
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem quaerat architecto
+                        incidunt adipisci impedit quam quasi! Possimus illum modi numquam fugit. Illum temporibus
+                        facilis placeat quia porro adipisci perspiciatis.
+                    </p>
+                </div>
+                <div class="profile__skills-container">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li class="profile__skills">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--60">
+                                    60%
+                                </div>
+                            </div>
+                            <span class="profile__skill_name"> css</span>
+
+                        </li>
+                        <li class="profile__skills">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--80">
+                                    80%
+                                </div>
+                            </div>
+                            <span class="profile__skill_name"> Java</span>
+
+                        </li>
+                        <li class="profile__skills">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--20">
+                                    20%
+                                </div>
+                            </div>
+                            <span class="profile__skill_name">Js</span>
+                        </li>
+                        <li class="profile__skills">
+                            <div class="load-bar">
+                                <div class="load-bar__bar bar--70">
+                                    70%
+                                </div>
+                            </div>
+                            <span class="profile__skill_name">SQL</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio" id="portfolio">
+        <h2 class="portfolio__title">PORTFOLIO SECTION</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+            <div class="portfolio__project">
+                <h3 class="portfolio__project-name">project</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1>contact</h1>
+
+        <form class="contact__form">
+            <div class="form__input-container">
+                <label for="">Firts name
+                    <input type="text" placeholder="Jhon">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="">Last name
+                    <input type="text" placeholder="Doe">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="">E-mail
+                    <input type="text" placeholder="example@gmail.com">
+                </label>
+            </div>
+            <div class="form__input-container">
+                <label for="">Message
+                    <textarea placeholder="your message"></textarea>
+                </label>
+            </div>
+
+            <div class="form__input-container">
+                <input type="submit">
+            </div>
+
+        </form>
+    </section>
+    <footer>
+        <h5>
+            proyecto con responsiv desdign | aprendiendo css3
+        </h5>
+        <strong> 06/21/2024 10:26 pm </strong>
+    </footer>
+
+   
+ 
+</body>
+<script>
+
+  function scrollToSection(targetSectionId) {
+    const targetSection = document.querySelector(targetSectionId); // Selector de la sección objetivo
+
+    targetSection.scrollIntoView({
+      behavior: 'smooth', // Indicar que el desplazamiento sea suave
+      block: 'center' // Alinear el inicio de la sección al borde superior visible
+    });
+  }
+  
+  // Ejemplo de uso: llamar a la función cuando se hace clic en un botón o enlace
+  let btnScroll = document.querySelector('#link_portfolio');
+  btnScroll.addEventListener('click',()=> scrollToSection('#portfolio'));
+  let btnScrollContact = document.querySelector('#link_contact');
+  btnScrollContact.addEventListener('click',()=> scrollToSection('#contact'));
+  
+  
+  </script>
+
+</html>

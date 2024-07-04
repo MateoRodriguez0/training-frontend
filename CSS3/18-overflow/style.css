@@ -1,0 +1,9 @@
+.box{
+    height: 100px;
+    width: 50%;
+    border: 3px solid rebeccapurple;
+    position: relative;
+    left: 25%;
+    overflow-y: auto;
+}
+

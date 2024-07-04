@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+}
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 10px;
+}
+
+.box-default {
+    padding: 25px;
+    border: 10px solid black;
+}
+
+.box-new{
+    padding: 25px;
+    border: 10px solid black; 
+    /*border box hace que el tamaño de la caja sea fijo incluyendo los
+     bordes y es decir que  el tamaño del 
+    contenido se debe adapatar a las demas propiedades*/ 
+    box-sizing: border-box;
+    /*content box es el valor predefinido y hace 
+    que el tamaño inicial de la caja sea solamente incluyendo el contenido, 
+    es decir que el tamaño del contenido se mantiene siempre, pero el 
+    de la caja puede aumentar*/ 
+    box-sizing: content-box;
+}

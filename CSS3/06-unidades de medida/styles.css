@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+div{
+   background-color: #ededed;
+
+    margin: 10px;
+    /*padding: 4cm;*/
+    /*padding: 4mm;*/
+    /*padding: 4in;*/
+    /*padding: 4pc;*/
+    /*padding: 4px;*/
+    /*padding: 4em;*/
+    /*padding: 4ex;*/
+    /*padding: 4%;*/
+    /*padding: 4cm;*/
+    /*padding: 4mm;*/
+    padding: 2%;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-size: 1em;
+}
+
+h1,p,span{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    text-align: start;
+    /*font-size: 1000%; incrementa el tamaño del font size del elemto padre*/
+}
+span{
+    font-size: large;
+    color: #aaa;
+    font-weight: lighter;
+}
+p{
+    text-align: justify;
+    color: #555;
+    font-size: 0.8em;
+    /*width: 50%; es el tamaño de  ancho del elemnto padra*/
+}

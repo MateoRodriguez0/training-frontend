@@ -1,0 +1,21 @@
+.box{
+    height: 100px;
+    width: 50%;
+    border: 3px solid rebeccapurple;
+    position: relative;
+    left: 25%;
+    /*Define como se comportan los espacios en blanco
+    white-space: */
+
+    /*no habrá salto de linea*/
+    white-space: nowrap;
+    /*toma los saltos de linea que estan en el codigo*/
+    white-space: pre;
+    white-space: normal;
+    /*agregar los tres puntos*/
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+

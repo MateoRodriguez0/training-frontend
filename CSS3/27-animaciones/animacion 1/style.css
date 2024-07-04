@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    background-color: #223;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px 50px;
+    background-color:transparent;
+    letter-spacing: 0.5em;
+    border-radius: 8px;
+    position: relative;
+}
+.btn-1{
+    border: 1px solid rgb(100, 189, 162);
+    color: rgb(100, 189, 162);
+    overflow: hidden;
+}
+
+.btn-2{
+    border: 1px solid rgb(202, 112, 214);
+    color: rgb(202, 112, 214);
+}
+
+.btn-1::before{
+    content: '';
+    background-color:rgb(100, 189, 162);
+    display: block;
+    height: 200%;
+    width: 140%;
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    transition: top .6s, left 2s;
+    border-radius: 50%;
+    left: 30%;
+    color: #fff;
+}
+
+.btn-1:hover::before{
+    left: -30%;
+    top: -35%;
+    margin-top: -0%;
+    color: #fff;
+}
+
+.btn-1:hover{
+    color: #fff;
+    border-color:#fff;
+}
+
+.btn-2:hover{
+    color: rgb(0, 247, 255) ;
+    border-color:rgb(0, 247, 255) ;
+    box-shadow: 0 0 6px #48e4, 0 0 16px #48e5;
+    text-shadow: 0 0 6px rgb(0, 247, 255) , 0 0 16px #48e5;
+    animation-name: parpadear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+
+}
+
+@keyframes parpadear {
+    0%{
+        color:transparent;
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 16px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 16px red;
+        
+    }
+    15%{ color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px red, 0 0 20px yellow;
+        text-shadow: none;
+        
+    }
+    20%{
+        color:transparent;
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 16px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 16px red;
+        
+    }
+    25%{ color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px red, 0 0 20px yellow;
+        text-shadow: none;
+        
+    }
+    30%{
+        color:transparent;
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 16px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 16px red;
+        
+    }
+    35%{ color:transparent ;
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px red, 0 0 20px yellow;
+        text-shadow: none;
+        
+    }
+    40%{
+        color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 20px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 20px red;
+        
+    }
+    45%{
+        color: transparent;
+       
+        
+    }
+    50%{
+        color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 20px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 20px red;
+    }
+    55%{
+          
+    }
+    60%{ color:transparent ;
+       
+    }
+    
+    65%{
+        color: transparent;
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px red, 0 0 16px yellow;
+        text-shadow: 0 0 6px red(0, 247, 255) , 0 0 16px yellow;
+        
+    }
+    70%{
+        color: rgb(202, 112, 214);
+      
+    } 
+  
+    75%{
+        color: transparent;
+        
+    }
+    80%{
+        color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 20px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 20px red;
+        
+    }
+    100%{
+        color: rgb(202, 112, 214);
+        border-color:rgb(0, 247, 255) ;
+        box-shadow: 0 0 6px rebeccapurple, 0 0 20px red;
+        text-shadow: 0 0 6px rebeccapurple , 0 0 20px red;
+        
+    }
+}
