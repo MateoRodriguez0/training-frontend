@@ -1,0 +1,6 @@
+
+@layer components{
+    .dropdown{
+        @apply relative flex items-center
+    }
+}

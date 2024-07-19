@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="./images/firefox.png" type="image/x-icon">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mozilla Firefox</title>
+</head>
+<body class="container md:mx-auto bg-white dark:bg-slate-800 text-slate-800 dark:text-white">
+    <!--Menu principal-->
+    <nav class=" w-full z-20 dark:bg-slate-800 fixed md:static md:w-auto border-b md:border-none
+    shadow-lg  md:shadow-none dark:border-none">
+        <div class="mx-auto p-6">
+            <div class="flex items-center justify-between">
+                <div class="z-20">
+                    <a href="#" class="flex items-center">
+                        <img class="w-14 h-14" src="./images/firefox.png" alt="">
+                        <span class="text-xl ml-2 md:text-2xl"><span class="font-bold ">Firefox </span>Browser</span>
+                    </a>
+                </div>
+                <!--cuerpo del menu-->
+                <div >
+                    <!--Boton reponsive-->
+                    <input type="checkbox" name="hamburguer" id="hamburguer" class="hidden peer">
+                    <label for="hamburguer" class="peer-checked:hamburguer block z-20 cursor-pointer md:hidden
+                    transition p-5 hover:bg-gray-200 dark:hover:bg-slate-700 rounded">
+                        <div class="h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                        <div class="mt-2 h-0.5 w-6 bg-black dark:bg-white transition"></div>
+                    </label>
+                    <!--cuerpo de los enlaces-->
+                    <div class="bg-white dark:bg-slate-900 md:dark:bg-slate-800 w-3/5 shadow-lg transition flex
+                    flex-col md:flex-row justify-between fixed inset-0 translate-x-[-100%] peer-checked:translate-x-0 md:w-auto md:static
+                    md:shadow-none md:translate-x-0">
+
+                    <div class="px-6  pt-32 flex flex-col md:flex-row md:items-center md:p-0 gap-3">
+                        <a class="tracking-wide cursor-pointer px-3 py-2 rounded-md hover:text-white font-semibold transition hover:bg-yellow-500 "  href="">Caracteristicas</a>
+                        <a class="tracking-wide cursor-pointer px-3 py-2 rounded-md hover:text-white font-semibold transition hover:bg-pink-500 " href="">Ayuda</a>
+                        <a class="tracking-wide cursor-pointer px-3 py-2 rounded-md hover:text-white font-semibold transition hover:bg-orange-500 " href="">Componentes</a>
+                        <a class="tracking-wide cursor-pointer px-3 py-2 rounded-md hover:text-white font-semibold transition hover:bg-green-500 " href="">Idiomas</a>
+                    </div>
+                    <!--boton-->
+                    <div class="block md:hidden border-t py-8 px-6 md:border-t-0
+                    md:py-0 md:pr-o md:pl-6 dark:border-slate-700">
+                        <a href="" class="block px-6 py-2 text-center text-white text-lg font-semibold rounded-md bg-purple-500 transition hover:bg-purple-600"> Descargar</a>
+                    </div>
+                    </div >
+                    
+                </div>
+                
+            </div>
+
+        </div>
+        
+
+    </nav>
+    
+    <div class="container mx-auto flex flex-col  px-5 md:py-24 md:flex-row items-center relative pt-40" >
+        
+        <!--cuerpo-->
+        <div class="lg:flex-grow md:w-1/2 lg:pr-32 md:pr-16 md:pb-0 md:flex flex-col items-center pb-5 cmd:items-start text-center md:text-left ">
+            <!--texto-->
+            <h1 class="lg:text-6xl text-5xl font-medium mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <p class="mb-8 text-lg"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque officiis deleniti quae, necessitatibus voluptatum officia error quis ipsum! Facilis id perspiciatis repellendus vel fugit commodi ipsam a enim neque cupiditate!</p>
+            
+            <div class="w-full flex flex-wrap md:flex-col  xl:flex-row justify-center xl:justify-start gap-10 md:gap-0">
+               <button class="btn-download">
+                <img src="/src/images/logo_windows.png"  alt="" class="w-10 h-10  object-cover">
+                <div class="flex flex-col leading-none items-start ml-2"> 
+                    <span>Instalar en</span>
+                    <strong>Windows</strong>
+                </div>
+               </button>
+               <button class="btn-download xl:ml-4 md:mt-4 xl:mt-0">
+                <img src="/src/images/logo_windows.png"  alt="" class="w-10 h-10 object-cover">
+                <div class="flex flex-col leading-none items-start ml-2"> 
+                    <span>Instalar en</span>
+                    <strong>Windows</strong>
+                </div>
+               </button>
+            </div>
+        </div>
+
+       
+        <div class="hidden md:block lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
+            <img src="/src/images/image_hero1.png" alt="" class="object-cover object-center rounded-md">
+        </div>
+         <!--svg fondo-->
+        <img src="/src/images/image_hero2.svg" alt="" class=" hidden md:block  absolute -z-10 bott-0 md:right-0 md:w-[55%] lg:w-[60%] xl:w-2/5">
+    </div>
+    <div class="container mx-auto w-10/12 md:w-8/12">
+        <h1 class="sm:text-5xl text-4xl mb-4 font-medium text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error repudiandae exercitationem alias.</h1>
+
+    </div>
+</body>
+</html>
